@@ -10,16 +10,16 @@ sites:
     icon: https://imhireready.com/favicon.ico
   - name: Testimoniq
     url: https://testimoniq.com
-    check: "tcp-ping"
+    icon: https://testimoniq.com/favicon.ico
   - name: ExplainThisCode
     url: https://explainthiscode.ai
     icon: https://explainthiscode.ai/favicon.ico
-  - name: UCP Monitor
-    url: https://ucpmonitor.com
-    check: "tcp-ping"
+  - name: UCP Guard
+    url: https://ucpguard.com
+    icon: https://ucpguard.com/favicon.ico
   - name: AutomaDocs
     url: https://automadocs.com
-    check: "tcp-ping"
+    icon: https://automadocs.com/favicon.ico
   - name: Mistria Companion
     url: https://mistriacompanion.com
     icon: https://mistriacompanion.com/favicon.ico
@@ -28,8 +28,10 @@ sites:
     icon: https://elizabethannstein.com/favicon.ico
   - name: Mythos Atlas
     url: https://mythosatlas.com
+    icon: https://mythosatlas.com/favicon.ico
   - name: GoodShape
     url: https://goodshape.app
+    icon: https://goodshape.app/favicon.ico
 
 status-website:
   cname: status.elizabethannstein.com
