@@ -32,6 +32,15 @@ sites:
   - name: GoodShape
     url: https://goodshape.app
     icon: https://goodshape.app/favicon.ico
+  - name: Rocket Vitals
+    url: https://rocketvitals.com
+    icon: https://rocketvitals.com/favicon.ico
+  - name: Portfolio Pro
+    url: https://portfoliopro.dev
+    icon: https://portfoliopro.dev/favicon.ico
+  - name: Finance Quest
+    url: https://financequest.fyi
+    icon: https://financequest.fyi/favicon.ico
 
 status-website:
   cname: status.elizabethannstein.com
