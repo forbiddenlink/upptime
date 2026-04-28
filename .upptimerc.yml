@@ -41,6 +41,9 @@ sites:
   - name: Finance Quest
     url: https://financequest.fyi
     icon: https://financequest.fyi/favicon.ico
+  - name: Create Surveys
+    url: https://create-surveys.com
+    icon: https://create-surveys.com/favicon.ico
 
 status-website:
   cname: status.elizabethannstein.com
