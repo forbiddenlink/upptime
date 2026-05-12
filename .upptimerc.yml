@@ -68,6 +68,9 @@ sites:
   - name: Create Surveys
     url: https://create-surveys.com
     icon: https://create-surveys.com/favicon.ico
+  - name: Rootwrecker
+    url: https://rootwrecker.com
+    icon: https://rootwrecker.com/favicon.ico
 
 status-website:
   cname: status.elizabethannstein.com
