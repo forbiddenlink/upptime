@@ -20,6 +20,20 @@ sites:
   - name: AutomaDocs
     url: https://automadocs.com
     icon: https://automadocs.com/favicon.ico
+  - name: AutomaDocs API
+    url: https://api.automadocs.com/health
+    icon: https://automadocs.com/favicon.ico
+    expectedStatusCodes:
+      - 200
+  - name: AutomaDocs OG Images
+    url: https://automadocs.com/api/og?title=AutomaDocs
+    icon: https://automadocs.com/favicon.ico
+  - name: AutomaDocs Public Sitemap
+    url: https://api.automadocs.com/api/public/sitemap
+    icon: https://automadocs.com/favicon.ico
+  - name: AutomaDocs Demo
+    url: https://automadocs.com/demo
+    icon: https://automadocs.com/favicon.ico
   - name: Mistria Companion
     url: https://mistriacompanion.com
     icon: https://mistriacompanion.com/favicon.ico
