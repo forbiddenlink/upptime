@@ -34,6 +34,16 @@ sites:
   - name: AutomaDocs Demo
     url: https://automadocs.com/demo
     icon: https://automadocs.com/favicon.ico
+  - name: AutomaDocs Dependency Health
+    url: https://api.automadocs.com/api/dependencies/health?strict=1
+    icon: https://automadocs.com/favicon.ico
+    expectedStatusCodes:
+      - 200
+  - name: AutomaDocs AI Budget
+    url: https://api.automadocs.com/api/spend/budget
+    icon: https://automadocs.com/favicon.ico
+    expectedStatusCodes:
+      - 200
   - name: Mistria Companion
     url: https://mistriacompanion.com
     icon: https://mistriacompanion.com/favicon.ico
