@@ -60,7 +60,7 @@ sites:
     url: https://rocketvitals.com
     icon: https://rocketvitals.com/favicon.ico
   - name: Portfolio Pro
-    url: https://portfoliopro.dev
+    url: https://www.portfoliopro.dev/api/health/webhook
     icon: https://portfoliopro.dev/favicon.ico
   - name: Finance Quest
     url: https://financequest.fyi
