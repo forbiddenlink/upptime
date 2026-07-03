@@ -5,6 +5,9 @@ sites:
   - name: MyAquaLog
     url: https://myaqualog.com
     icon: https://myaqualog.com/favicon.ico
+  - name: StoryVision
+    url: https://storyvision.vercel.app
+    icon: https://storyvision.vercel.app/favicon.ico
   - name: Hire Ready
     url: https://imhireready.com
     icon: https://imhireready.com/favicon.ico
