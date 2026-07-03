@@ -23,18 +23,18 @@
     "icon": "https://storyvision.vercel.app/favicon.ico",
     "slug": "story-vision",
     "status": "down",
-    "uptime": "30.57%",
-    "uptimeDay": "30.57%",
-    "uptimeWeek": "30.57%",
-    "uptimeMonth": "30.57%",
-    "uptimeYear": "30.57%",
+    "uptime": "22.22%",
+    "uptimeDay": "22.22%",
+    "uptimeWeek": "22.22%",
+    "uptimeMonth": "22.22%",
+    "uptimeYear": "22.22%",
     "time": 110,
     "timeDay": 110,
     "timeWeek": 110,
     "timeMonth": 110,
     "timeYear": 110,
     "dailyMinutesDown": {
-      "2026-07-03": 0
+      "2026-07-03": 1
     }
   },
   {
@@ -229,7 +229,7 @@
       "2026-05-12": 623,
       "2026-05-20": 1405,
       "2026-05-19": 36,
-      "2026-07-03": 876,
+      "2026-07-03": 877,
       "2026-07-02": 1440,
       "2026-07-01": 1440,
       "2026-06-30": 1440,
