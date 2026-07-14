@@ -1,7 +1,7 @@
 url: https://api.automadocs.com/api/dependencies/health?strict=1
 status: down
 code: 503
-responseTime: 592
-lastUpdated: 2026-07-13T23:17:09.794Z
+responseTime: 628
+lastUpdated: 2026-07-14T23:16:18.178Z
 startTime: 2026-05-12T12:56:43.351Z
 generator: Upptime <https://github.com/upptime/upptime>
