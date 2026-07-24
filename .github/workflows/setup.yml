@@ -31,25 +31,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ secrets.GH_PAT || github.token }}
       - name: Update template
-        uses: upptime/uptime-monitor@v1.43.9
+        uses: upptime/uptime-monitor@v1.43.10
         with:
           command: "update-template"
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
       - name: Update response time
-        uses: upptime/uptime-monitor@v1.43.9
+        uses: upptime/uptime-monitor@v1.43.10
         with:
           command: "response-time"
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
           SECRETS_CONTEXT: ${{ toJson(secrets) }}
       - name: Update summary in README
-        uses: upptime/uptime-monitor@v1.43.9
+        uses: upptime/uptime-monitor@v1.43.10
         with:
           command: "readme"
         env:
@@ -63,18 +63,18 @@ jobs:
           token: ${{ secrets.GH_PAT || github.token }}
       - name: Setup Node.js for direct graph generation
         if: steps.dispatch_graphs.outcome == 'failure'
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
       - name: Generate graphs directly if dispatch fails
         if: steps.dispatch_graphs.outcome == 'failure'
-        uses: upptime/uptime-monitor@v1.43.9
+        uses: upptime/uptime-monitor@v1.43.10
         with:
           command: "graphs"
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
       - name: Generate site
-        uses: upptime/uptime-monitor@v1.43.9
+        uses: upptime/uptime-monitor@v1.43.10
         with:
           command: "site"
         env:
