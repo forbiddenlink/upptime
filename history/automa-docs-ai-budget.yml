@@ -1,7 +1,7 @@
 url: https://api.automadocs.com/api/spend/budget
-status: up
-code: 200
-responseTime: 128
-lastUpdated: 2026-08-09T23:05:34.479Z
+status: down
+code: 502
+responseTime: 10232
+lastUpdated: 2026-08-10T03:20:58.843Z
 startTime: 2026-05-12T12:56:57.394Z
 generator: Upptime <https://github.com/upptime/upptime>
