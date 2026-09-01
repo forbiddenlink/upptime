@@ -71,6 +71,24 @@ sites:
   - name: Create Surveys
     url: https://create-surveys.com
     icon: https://create-surveys.com/favicon.ico
+  - name: Nova Particles
+    url: https://novaparticles.com
+    icon: https://novaparticles.com/favicon.ico
+  - name: Personaudit
+    url: https://personaudit.com
+    icon: https://personaudit.com/favicon.ico
+  - name: Contradict Me
+    url: https://contradict-me.vercel.app
+    icon: https://contradict-me.vercel.app/favicon.ico
+  - name: Canvas Flow
+    url: https://canvas-flow.vercel.app
+    icon: https://canvas-flow.vercel.app/favicon.ico
+  - name: CodeCraft Dev
+    url: https://codecraft-dev.vercel.app
+    icon: https://codecraft-dev.vercel.app/favicon.ico
+  - name: Dare U Radio
+    url: https://dareuradio.com
+    icon: https://dareuradio.com/favicon.ico
 
 status-website:
   cname: status.elizabethannstein.com
