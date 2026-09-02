@@ -37,8 +37,14 @@ sites:
   - name: AutomaDocs Demo
     url: https://automadocs.com/demo
     icon: https://automadocs.com/favicon.ico
+  # NOT ?strict=1. With strict, this route 503s whenever ANY ONE of anthropic,
+  # openai, pinecone or github is having a moment, so the status page reported
+  # 61.82% uptime for an app that was serving fine the whole time. A probe should
+  # answer "is MY app serving", not "are all four of my upstreams perfectly healthy".
+  # Without strict the route still returns the full per-service body, and the app's
+  # own logger.warn + Sentry carry the dependency signal.
   - name: AutomaDocs Dependency Health
-    url: https://api.automadocs.com/api/dependencies/health?strict=1
+    url: https://api.automadocs.com/api/dependencies/health
     icon: https://automadocs.com/favicon.ico
     expectedStatusCodes:
       - 200
