@@ -53,9 +53,6 @@ sites:
     icon: https://automadocs.com/favicon.ico
     expectedStatusCodes:
       - 200
-  - name: Mistria Companion
-    url: https://mistriacompanion.com
-    icon: https://mistriacompanion.com/favicon.ico
   - name: Portfolio
     url: https://elizabethannstein.com
     icon: https://elizabethannstein.com/favicon.ico
