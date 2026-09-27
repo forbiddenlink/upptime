@@ -107,6 +107,12 @@ sites:
   - name: n8n
     url: https://n8n.elizabethannstein.com/healthz
     icon: https://elizabethannstein.com/favicon.ico
+  - name: CarefulShip
+    url: https://carefulship.vercel.app
+  - name: Kindred
+    url: https://quantum-forge-self.vercel.app
+  - name: Scripture Lens
+    url: https://scripture-lens-fawn.vercel.app
 
 status-website:
   cname: status.elizabethannstein.com
