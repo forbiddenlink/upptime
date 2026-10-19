@@ -34,7 +34,7 @@ jobs:
       - name: Create GitHub App token
         id: app_token
         if: ${{ vars.GH_APP_ID != '' && env.GH_APP_PRIVATE_KEY != '' }}
-        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3
         with:
           client-id: ${{ vars.GH_APP_ID }}
           private-key: ${{ env.GH_APP_PRIVATE_KEY }}
@@ -48,7 +48,7 @@ jobs:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
       - name: Update template
-        uses: upptime/uptime-monitor@e2f6bb2b40bd1e2d7356c0768576c7d0dc44fe64 # master
+        uses: upptime/uptime-monitor@c34c41a9fc6fc6852ca94c66ae83f54dbe7063ae # master
         with:
           command: "update-template"
         env:
