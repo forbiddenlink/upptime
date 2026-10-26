@@ -48,6 +48,6 @@ jobs:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
       - name: Update code
-        uses: upptime/updates@ee62ea20190641d574fd61d4b7d3949a06e7608a # master
+        uses: upptime/updates@c99cb3a4c66be793320e40a87d6b2e5b39ef663a # master
         env:
           GH_PAT: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
