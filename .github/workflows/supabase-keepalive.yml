@@ -1,9 +1,9 @@
 # Free-plan Supabase projects pause after 7 days without activity, which takes
 # the app offline until someone restores it by hand. Hobby projects in the free
 # "hobby" org (scripture-lens, carefulship) get one real database query a day
-# so they never go idle. A 401 still counts: PostgREST hands the query to
-# Postgres, which rejects it on the table grant, so the database did the work.
-# Anything else (5xx, timeout, 540 paused) fails the job so GitHub emails.
+# so they never go idle. Only 200 passes. scripture-lens returned 401 from a
+# private table, which counted as a pass, and it paused on 2026-10-30 anyway, so
+# it now calls keepalive(). Anything else fails the job so GitHub emails.
 name: Supabase keep-alive
 
 on:
@@ -24,28 +24,28 @@ jobs:
         include:
           - name: scripture-lens
             ref: elvtjtjcbqbbvgxxobbv
-            table: course_progress
+            endpoint: rpc/keepalive
             key: SCRIPTURE_LENS_ANON_KEY
           - name: carefulship
             ref: olvlpfrniwryksmqhocv
-            table: sites
+            endpoint: sites?select=id&limit=1
             key: CAREFULSHIP_ANON_KEY
     steps:
       - name: Query ${{ matrix.name }}
         env:
           ANON_KEY: ${{ secrets[matrix.key] }}
           REF: ${{ matrix.ref }}
-          TABLE: ${{ matrix.table }}
+          ENDPOINT: ${{ matrix.endpoint }}
         run: |
           if [ -z "$ANON_KEY" ]; then
             echo "::error::secret ${{ matrix.key }} is not set"
             exit 1
           fi
           code=$(curl -s -o /dev/null -w '%{http_code}' -m 30 \
-            "https://${REF}.supabase.co/rest/v1/${TABLE}?select=*&limit=1" \
-            -H "apikey: ${ANON_KEY}" -H "Authorization: Bearer ${ANON_KEY}")
+            "https://${REF}.supabase.co/rest/v1/${ENDPOINT}" \
+            -H "apikey: ${ANON_KEY}" -H "Authorization: Bearer ${ANON_KEY}") || code=000
           echo "HTTP ${code}"
-          case "$code" in
-            200|401) ;;
-            *) echo "::error::${{ matrix.name }} keep-alive got HTTP ${code}"; exit 1 ;;
-          esac
+          if [ "$code" != "200" ]; then
+            echo "::error::${{ matrix.name }} keep-alive got HTTP ${code}. HTTP 000 means the project may be paused."
+            exit 1
+          fi
