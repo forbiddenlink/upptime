@@ -1,7 +1,7 @@
 url: https://miniflux.elizabethannstein.com/healthcheck
-status: down
-code: 429
-responseTime: 15
-lastUpdated: 2026-11-10T14:44:51.193Z
+status: up
+code: 200
+responseTime: 136
+lastUpdated: 2026-11-10T14:50:54.175Z
 startTime: 2026-09-01T14:28:04.927Z
 generator: Upptime <https://github.com/upptime/upptime>
