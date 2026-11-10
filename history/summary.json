@@ -140,23 +140,23 @@
     "url": "https://api.automadocs.com/health",
     "icon": "https://automadocs.com/favicon.ico",
     "slug": "automa-docs-api",
-    "status": "down",
+    "status": "up",
     "uptime": "99.44%",
-    "uptimeDay": "99.91%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.92%",
+    "uptimeDay": "99.54%",
+    "uptimeWeek": "99.93%",
+    "uptimeMonth": "99.91%",
     "uptimeYear": "99.44%",
     "time": 333,
-    "timeDay": 103,
-    "timeWeek": 167,
-    "timeMonth": 180,
+    "timeDay": 121,
+    "timeWeek": 166,
+    "timeMonth": 179,
     "timeYear": 333,
     "dailyMinutesDown": {
       "2026-05-20": 1405,
       "2026-05-19": 38,
       "2026-10-17": 17,
       "2026-10-23": 15,
-      "2026-11-10": 1
+      "2026-11-10": 7
     }
   },
   {
@@ -182,15 +182,15 @@
     "url": "https://api.automadocs.com/api/public/sitemap",
     "icon": "https://automadocs.com/favicon.ico",
     "slug": "automa-docs-public-sitemap",
-    "status": "down",
+    "status": "up",
     "uptime": "99.18%",
-    "uptimeDay": "99.92%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.56%",
+    "uptimeWeek": "99.94%",
+    "uptimeMonth": "99.99%",
     "uptimeYear": "99.18%",
     "time": 181,
-    "timeDay": 59,
-    "timeWeek": 99,
+    "timeDay": 77,
+    "timeWeek": 101,
     "timeMonth": 123,
     "timeYear": 181,
     "dailyMinutesDown": {
@@ -198,7 +198,7 @@
       "2026-05-20": 1405,
       "2026-05-19": 37,
       "2026-07-02": 73,
-      "2026-11-10": 1
+      "2026-11-10": 6
     }
   },
   {
@@ -224,17 +224,17 @@
     "url": "https://api.automadocs.com/api/dependencies/health",
     "icon": "https://automadocs.com/favicon.ico",
     "slug": "automa-docs-dependency-health",
-    "status": "down",
+    "status": "up",
     "uptime": "76.41%",
-    "uptimeDay": "99.94%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.96%",
+    "uptimeDay": "99.57%",
+    "uptimeWeek": "99.94%",
+    "uptimeMonth": "99.95%",
     "uptimeYear": "76.41%",
-    "time": 788,
-    "timeDay": 58,
-    "timeWeek": 371,
-    "timeMonth": 495,
-    "timeYear": 788,
+    "time": 789,
+    "timeDay": 388,
+    "timeWeek": 468,
+    "timeMonth": 512,
+    "timeYear": 789,
     "dailyMinutesDown": {
       "2026-05-12": 623,
       "2026-05-20": 1405,
@@ -289,7 +289,7 @@
       "2026-08-12": 21,
       "2026-09-01": 28,
       "2026-10-23": 15,
-      "2026-11-10": 1
+      "2026-11-10": 6
     }
   },
   {
@@ -627,19 +627,19 @@
     "url": "https://miniflux.elizabethannstein.com/healthcheck",
     "icon": "https://elizabethannstein.com/favicon.ico",
     "slug": "miniflux",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.94%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 237,
-    "timeDay": 110,
-    "timeWeek": 154,
-    "timeMonth": 207,
-    "timeYear": 237,
+    "status": "up",
+    "uptime": "99.99%",
+    "uptimeDay": "99.58%",
+    "uptimeWeek": "99.94%",
+    "uptimeMonth": "99.99%",
+    "uptimeYear": "99.99%",
+    "time": 236,
+    "timeDay": 118,
+    "timeWeek": 151,
+    "timeMonth": 204,
+    "timeYear": 236,
     "dailyMinutesDown": {
-      "2026-11-10": 1
+      "2026-11-10": 6
     }
   },
   {
@@ -647,20 +647,20 @@
     "url": "https://n8n.elizabethannstein.com/healthz",
     "icon": "https://elizabethannstein.com/favicon.ico",
     "slug": "n8n",
-    "status": "down",
-    "uptime": "99.97%",
-    "uptimeDay": "99.95%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.93%",
-    "uptimeYear": "99.97%",
-    "time": 260,
-    "timeDay": 63,
-    "timeWeek": 144,
+    "status": "up",
+    "uptime": "99.96%",
+    "uptimeDay": "99.59%",
+    "uptimeWeek": "99.94%",
+    "uptimeMonth": "99.91%",
+    "uptimeYear": "99.96%",
+    "time": 259,
+    "timeDay": 100,
+    "timeWeek": 148,
     "timeMonth": 178,
-    "timeYear": 260,
+    "timeYear": 259,
     "dailyMinutesDown": {
       "2026-10-27": 32,
-      "2026-11-10": 1
+      "2026-11-10": 6
     }
   },
   {
