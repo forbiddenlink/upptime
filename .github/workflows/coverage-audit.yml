@@ -1,0 +1,27 @@
+name: Coverage Audit
+
+# Weekly report of public repos whose homepage is not monitored in .upptimerc.yml.
+# Report only (job summary); needs no secrets beyond the default GITHUB_TOKEN.
+on:
+  schedule:
+    - cron: "23 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests
+      - name: List unmonitored homepages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh repo list "${{ github.repository_owner }}" --visibility public --limit 200 \
+            --json name,homepageUrl,isArchived > "$RUNNER_TEMP/repos.json"
+          python3 scripts/coverage_audit.py --repos "$RUNNER_TEMP/repos.json" | tee -a "$GITHUB_STEP_SUMMARY"
